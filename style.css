@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Inter','Moulpali',sans-serif;
-    background-color: rgba(196,196,196,0.1); 
+    background-color: rgba(16, 0, 0, 0.1); 
     overflow-x: hidden;
 }
 
@@ -78,6 +78,7 @@ nav .nav-list li a:hover {
 .main-container{
     width: 100%;
     margin: auto;
+    
 }
 h1{
     text-transform: uppercase;
@@ -86,6 +87,7 @@ h1{
 }
 .img-h{
     height: 180px;
+    width: 100%;
     object-fit: cover;
 }
 .rounded{
@@ -189,19 +191,36 @@ margin: 0 6px;
 }
 
 
-header, footer {
+ footer {
     background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px; 
+    position: static;
+    z-index: 100;
+    margin-top: 50px;
+}
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
-
-.header-container,
+.header-container {
+    max-width: 1300px;    
+    margin: auto;
+    width: 100%;
+    padding: 15px 30px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .footer-container {
     max-width: 1300px;
     margin: 0 auto;
@@ -248,7 +267,7 @@ button{
         margin: 0 auto;
     }
      h1{
-    text-align: start;
+    text-align: center;
 }
 .logo{
         font-size: 22px;
